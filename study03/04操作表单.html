@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <form method="post">
+      <p>
+          <span>用户名：</span><input type="text" id="username" required placeholder="请输出用户名">
+      </p>
+      <p>
+          <span>性别：</span>
+          <input type="radio" name="sex" value="man" id="man_radio">男
+          <input type="radio" name="sex" value="women" id="women_radio">女
+      </p>
+      <input type="submit">
+  </form>
+  <script>
+      let username=document.getElementById('username');//得到输入框的值，修改
+      //对于单选框和多选框等固定值，.value只能取到当前的值
+      //只能通过查看返回结果是为true
+      let man_radio=document.getElementById('man_radio');
+      let women_radio=document.getElementById('women_radio');
+      if(man_radio.checked){
+
+      }
+      women_radio.checked=false;//清空
+
+  </script>
+</body>
+</html>

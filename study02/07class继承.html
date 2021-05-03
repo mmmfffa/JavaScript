@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--suppress JSPotentiallyInvalidConstructorUsage -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+       <body>
+       <script>
+       // function student(name){
+       //     this.name=name;
+       // }
+       // //给student新增一个方法
+       // student.prototype.hello=function (){
+       //     alert("hello");
+       // };
+       //es6之后
+       //定义一个学生类  模板
+       class student{
+           constructor(name) {
+               this.name=name;
+           }
+           hello(){
+               alert("hello!");
+           }
+       }
+       //继承  等价之前__proto__原型指向父类
+       class middleStudent extends student{
+            constructor(name,grade) {
+                super(name);
+                this.grade=grade;
+            }
+            myGrade(){
+                alert("myGrade!");
+            }
+       }
+       let xiaoMing=new middleStudent(`xiaoMing`,1);
+   </script>
+</body>
+</html>

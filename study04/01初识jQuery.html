@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+</head>
+<body>
+<!--
+     公式：$(selector).action()
+-->
+   <a href="" id="test-jquery">点击</a>
+   <script>
+         /*
+         以前方法：
+         let id=document.getElementById('test-jquery');
+         id.click()
+         * */
+
+        /*
+         cdn方法：选择器就是css选择器
+        * */
+
+        $('#test-jquery').click(function (){
+            alert('hello!');
+        });
+   </script>
+</body>
+</html>

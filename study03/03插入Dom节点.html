@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--    <link rel="stylesheet" href="" type="text/css">-->
+<!--    <script type="text/javascript" src=""></script>-->
+</head>
+<body>
+      <p id="js">javascript</p>
+      <div id="list">
+          <p id="se">javaSE</p>
+          <p id="ee">javaEE</p>
+          <p id="me">javaME</p>
+      </div>
+      <script>
+
+
+          let ee=document.getElementById('ee');
+          let js=document.getElementById('js');
+          let list=document.getElementById('list');
+          //要包含的节点 insertBefore(newNode,targetNode)
+          list.insertBefore(js,ee);
+
+
+
+
+          /*
+          let js=document.getElementById('js');//已存在的节点
+          let list=document.getElementById('list');
+          list.appendChild(js);//追加到后面
+          //通过js创建新的节点
+          let newP=document.createElement('p');//创建一个p标签
+          newP.id='newP';
+          newP.innerText='hello';
+          list.append(newP);
+
+          //创建新标签
+          let myScript=document.createElement('script');
+          myScript.setAttribute('type','text/javascript');
+
+          // let body=document.getElementsByTagName('body');
+          //修改css样式，style
+          // body.style.background='red';
+
+           //创建一个style标签
+          let myStyle=document.createElement('style');//创建了一个空style标签
+          myScript.setAttribute('type','text/css');
+          myStyle.innerHTML='body{background-color: aquamarine;}';//设置标签内容
+          document.getElementsByTagName('head')[0].appendChild(myStyle);
+
+           */
+
+
+      </script>
+
+</body>
+</html>

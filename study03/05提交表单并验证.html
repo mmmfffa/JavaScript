@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+</head>
+<body>
+<!--    表单绑定提交事件
+      onsubmit绑定一个提交的函数  true false
+      将结果返回表单 return接收
+-->
+    <form action="#" method="post" onsubmit="return check()">
+        <p>
+            <label>用户名:</label><input type="text" id="username" name="username">
+        </p>
+        <p>
+            <label>密码:</label><input type="password" id="password">
+        </p>
+        <!-- 密码安全性另一种实现方式  通过隐藏域提交对输入无影响，否则会将密码变长使用户体验性变差-->
+        <input type="hidden" id="md5-password" name="password">
+        <!--绑定点击事件onclick-->
+        <button type="submit">提交</button>
+    </form>
+    <script>
+         function check(){
+            let username=document.getElementById('username');
+            let password=document.getElementById('password');
+             let md5Password=document.getElementById('md5-password');
+             password.value=md5(password.value);
+            //md5Password.value=md5(password.value);
+
+            //MD5加密算法
+            //password.value=md5(password.value);
+
+            //可以进行表单判定，true就是通过
+             return true;//不提交
+         }
+    </script>
+</body>
+</html>

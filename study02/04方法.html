@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function getAge(){
+            //今年-
+            let now=new Date().getFullYear();
+            return now-this.birth;
+        }
+        let person = {
+            name: 'mafu',
+            birth: '2020',
+            //方法,注意直接写函数名不用括号
+            age:getAge
+        };
+        getAge.apply(person,[]);//this指向person，参数为空（为空时用数组表示）
+    </script>
+</body>
+</html>

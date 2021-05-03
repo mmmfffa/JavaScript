@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <style>
+        #divMove{
+            width: 500px;
+            height: 300px;
+            border: 2px solid chartreuse;
+        }
+    </style>
+</head>
+<body>
+<!--获取鼠标当前的一个坐标-->
+   <label>mouse:</label>
+   <span id="coordinate"></span>
+   <div id="divMove">
+       移动鼠标试一试
+   </div>
+   <script>
+        //当网页元素加载完毕后响应事件
+        $(function (){
+            $('#divMove').mousemove(function (e){
+                $('#coordinate').text('x:'+e.pageX+'  y:'+e.pageY);
+            });
+        });
+   </script>
+</body>
+</html>

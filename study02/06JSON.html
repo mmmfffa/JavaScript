@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+   <script>
+       "use strict";
+       let person={
+           name:"mafu",
+           age:13,
+           run:function (){
+               console.log(this.name+"run……")
+           }
+       };
+       let xiaoMing={
+           name:"xiaoMing",
+       };
+       //指向原型  注意是两哥下划线
+       xiaoMing.__proto__=person;
+
+
+       //对象转换为JSON字符串
+       // let  jsonPerson=JSON.stringify(person);
+       //JSON字符串转换为对象
+       // let  obj=JSON.parse(jsonPerson);
+   </script>
+</body>
+</html>

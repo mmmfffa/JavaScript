@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--suppress ALL -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        'use strict';
+
+        function qj4(){
+            for (let i = 0; i < 3; i++) {
+                console.log(i);
+            }
+            console.log(i+1);//Uncaught ReferenceError: i is not defined
+        }
+
+        /*
+        //唯一的全局变量
+        var mafu={};
+        //定义全局变量
+        mafu.name='mafu';
+        mafu.add=function (a,b){
+            return a+b;
+        }
+        console.log(mafu.name);
+
+        var x=1;
+        alert(x);
+        alert(window.x);
+
+
+        function  qj(){
+            var x=1;
+            function qj2(){
+                var x = 'A';
+                console.log('inner=>'+x);//outer1
+            }
+            console.log('outer=>'+x);
+            qj2();
+        }
+        qj();
+
+
+        function qj3(){
+            var x=1,
+                y=x+1,
+                z,i,a;//undefined
+            //之后随意用
+            z=1;
+
+        }
+        qj3();
+
+       */
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

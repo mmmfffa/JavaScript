@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="father">
+        <h1>标签名</h1>
+        <p id="p1">p1</p>
+        <p class="p2">p2</p>
+    </div>
+
+    <script>
+
+        let self=document.getElementById('p1');
+        let father= self.parentElement;
+        father.removeChild(self);
+
+
+        //标签选择器
+        // let h1=document.getElementsByTagName('h1');
+        //
+        // let p1= document.getElementById('p1');
+        // let p2= document.getElementsByClassName('p2');
+        // let father= document.getElementById('father');
+        //获取所有子节点
+        // let children=father.children;
+        // father.firstChild;
+        // father.lastChild;
+    </script>
+</body>
+</html>
